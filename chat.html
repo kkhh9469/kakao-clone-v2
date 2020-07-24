@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="chats-body">
     <div class="status-bar">
       <div class="status-bar__list">
         <div class="status-bar__column">
@@ -25,6 +25,7 @@
         </div>
       </div>
     </div>
+
     <header class="header">
       <div class="header__header-column">
         <a href="index.html" class="header__back-butten">
@@ -41,25 +42,43 @@
         </span>
       </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">Friday, January 11, 2019</span>
         <li class="incoming-message message">
           <img src="images/avatar.jpg" class="g-avatar message__avatar" />
           <div class="message__content">
-            <span class="message__author">Best Friend</span>
-            <div class="massage__buble">
+            <span class="massage__buble">
               Congrats I love you
-            </div>
+            </span>
+            <span class="message__author">Best Friend</span>
           </div>
-          <span class="message__timestamp"></span>
         </li>
         <span class="message__timestamp"></span>
-        <li class="incoming-message message">
+        <li class="sent-message message">
           <div class="message__content">
-            <div class="massage__buble">
+            <span class="massage__buble">
               Thank you see you soon
-            </div>
+            </span>
+          </div>
+        </li>
+      </ul>
+      <ul class="chat__messages">
+        <li class="incoming-message message">
+          <img src="images/avatar.jpg" class="g-avatar message__avatar" />
+          <div class="message__content">
+            <span class="massage__buble">
+              Congrats I love you
+            </span>
+            <span class="message__author">Best Friend</span>
+          </div>
+        </li>
+        <span class="message__timestamp"></span>
+        <li class="sent-message message">
+          <div class="message__content">
+            <span class="massage__buble">
+              Thank you see you soon
+            </span>
           </div>
         </li>
       </ul>
@@ -76,10 +95,10 @@
         />
       </div>
       <div class="chat__write-column">
-        <span class="chat wrtie-icon">
+        <span class="chat__wrtie-icon">
           <i class="far fa-smile-wink"></i>
         </span>
-        <span class="chat wrtie-icon">
+        <span class="chat__wrtie-icon">
           <i class="fas fa-microphone"></i>
         </span>
       </div>
